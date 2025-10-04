@@ -63,29 +63,29 @@ LDR Features of LDR are as follows:
 
 
 ## PROGRAM:
-int sensorPin = A0; // select the input pin for the LDR
-int sensorValue = 0; // variable to store the value coming from the sensor
-int led = 13;
-void setup() { // declare the ledPin as an OUTPUT:
-pinMode(led, OUTPUT);
-Serial.begin(9600); }
-void loop()
-{
-sensorValue = analogRead(sensorPin);
-Serial.println(sensorValue);
-if (sensorValue < 100)
-{
-Serial.println("LED light on");
-digitalWrite(led,HIGH);
-delay(1000);
-}
-else
-{
-digitalWrite(led,LOW);
-Serial.println("LED light off");
-delay(1000);
-}
-}
+     int sensorPin = A0; // select the input pin for the LDR
+     int sensorValue = 0; // variable to store the value coming from the sensor
+     int led = 13;
+     void setup() { // declare the ledPin as an OUTPUT:
+     pinMode(led, OUTPUT);
+     Serial.begin(9600); }
+     void loop()
+     {
+     sensorValue = analogRead(sensorPin);
+     Serial.println(sensorValue);
+     if (sensorValue < 100)
+     {
+     Serial.println("LED light on");
+     digitalWrite(led,HIGH);
+     delay(1000);
+     }
+     else
+     {
+     digitalWrite(led,LOW);
+     Serial.println("LED light off");
+     delay(1000);
+     }
+     }
 ## CIRCUIT DIAGRAM:
 <img width="1919" height="1199" alt="Screenshot 2025-10-04 142835" src="https://github.com/user-attachments/assets/89b72471-c2a9-48ef-97f4-564aa4a538fd" />
 
